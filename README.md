@@ -3,14 +3,7 @@ This is a simple TODO web app created with [Create React React App](https://gith
 ## Running this sample
 1. `npm install`
 
-1. `amplify init` (select `no` when prompted about existing environment, and enter your own desired environment name like `todos`)
-
-```
-➜  amplify-todos-example git:(master) amplify init
-Note: It is recommended to run this command from the root of your app directory
-? Do you want to use an existing environment? No
-? Enter a name for the environment todos
-```
+1. `amplify init` (select `no` when prompted about existing environment, and enter your own desired environment name like `dev`)
 
 1. `amplify push` (select `no` when asked about generating code for the GraphQL API)
 
