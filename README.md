@@ -23,7 +23,9 @@ Note: It is recommended to run this command from the root of your app directory
 
 
 ## Running end-to-end tests locally
-`npm run test:integration`
+1. Update `src/tests/pages/signIn.js` with the username and password you used to create an account above.
+
+1. `npm run test:integration`
 
 Edit `jest-puppeteer.config.js` to toggle headless mode or to change the local dev server config.
 
