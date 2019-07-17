@@ -1,0 +1,20 @@
+{
+    "permissions": {
+        "auth": {
+            "cognitob9f86c52": [
+                "create",
+                "read",
+                "update",
+                "delete"
+            ]
+        },
+        "api": {
+            "innovate2019amplify": [
+                "create",
+                "read",
+                "update",
+                "delete"
+            ]
+        }
+    }
+}

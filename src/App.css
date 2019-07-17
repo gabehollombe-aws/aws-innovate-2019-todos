@@ -1,0 +1,29 @@
+@import-normalize;
+
+.App {
+  text-align: left;
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid #cccccc;
+  border-top: 0;
+  padding: 1em;
+}
+
+.App input {
+  width: 90%;
+  padding: 1em;
+  font-size: 1em
+}
+
+.App ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.App ul li {
+  padding: 1em 0;
+}
+
+.App ul li button {
+  float: right
+}

@@ -1,0 +1,6 @@
+{
+    "mode": "master",
+    "workers": {
+      "count": 1
+    }
+}

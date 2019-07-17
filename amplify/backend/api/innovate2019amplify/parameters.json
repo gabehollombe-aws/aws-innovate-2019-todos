@@ -1,0 +1,10 @@
+{
+    "AppSyncApiName": "innovate2019amplify",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcognitob9f86c52",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
