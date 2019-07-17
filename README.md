@@ -19,7 +19,7 @@ Note: It is recommended to run this command from the root of your app directory
 
 1. Create an account, verify your code emailed to you during account creation, and log in.
 
-1. Make some TODOs manually in the broweser or try out the Lambda load tester.
+1. Make some TODOs manually in the broweser or try running the end-to-end automated integration tests.
 
 
 ## Running end-to-end tests locally
