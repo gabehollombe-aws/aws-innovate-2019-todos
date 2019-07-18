@@ -13,29 +13,5 @@
 				"securityType": "AMAZON_COGNITO_USER_POOLS"
 			}
 		}
-	},
-	"function": {
-		"LoadTester": {
-			"service": "Lambda",
-			"providerPlugin": "awscloudformation",
-			"build": true,
-			"dependsOn": [
-				{
-					"category": "auth",
-					"resourceName": "cognitob9f86c52",
-					"attributes": [
-						"UserPoolId"
-					]
-				},
-				{
-					"category": "api",
-					"resourceName": "innovate2019amplify",
-					"attributes": [
-						"GraphQLAPIIdOutput",
-						"GraphQLAPIEndpointOutput"
-					]
-				}
-			]
-		}
 	}
 }
