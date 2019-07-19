@@ -22,4 +22,19 @@ This is a simple TODO web app created with [Create React React App](https://gith
 
 Edit `jest-puppeteer.config.js` to toggle headless mode or to change the local dev server config.
 
+## Running the load tester lambda
+```
 
+
+ENV_NAME=$(jq -r .envName amplify/.config/local-env-info.json)
+LOAD_TESTER_FUNCTION_NAME=$(jq -r '.function | keys[0]' amplify/backend/backend-config.json)
+aws lambda invoke \
+--profile=$PROFILE_NAME \
+--function-name "$LOAD_TESTER_FUNCTION_NAME-$ENV_NAME" \
+--payload '{ "mode": "master", "workers": { "count": 1 } }' \
+--log-type Tail \
+--query 'LogResult' \
+--output text \
+/dev/null \
+|  base64 -D
+```
